@@ -1,3 +1,7 @@
 body {
   margin: 0;
 }
+
+.people-list {
+  border: 1px solid black !important;
+}

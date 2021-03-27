@@ -5,3 +5,8 @@ body {
 .people-list {
   border: 1px solid black !important;
 }
+
+.people-list td, .people-list th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}

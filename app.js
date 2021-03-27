@@ -2,13 +2,21 @@ window.onload = () => {
   
   var table = document.getElementById("root");
   
-  let result = 0;
+  const salaryElement = document.getElementById("salary");
+  const ageElement = document.getElementById("age");
+  
+  let inSalary = 0;
+  let inAge = 0;
   
   for(i = 0; i < table.rows.length; i++) {
     let salary = parseInt(table.rows[i].cells[3].innerHTML);
-    
-    result = result + salary;
+    let age = parseInt(table.rows[i].cells[4].innerHTML);
+  
+    inSalary = inSalary + salary;
+    inAge = inAge + age;
   }
-  document.getElementById("result").innerHTML = result;
-  console.log(result);
+  
+  salaryElement.innerHTML = inSalary;
+  ageElement.innerHTML = inAge;
+  console.log("Total Salary: " + inSalary + " & " + "Total Age: " + inAge);
 }

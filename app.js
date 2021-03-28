@@ -11,12 +11,12 @@ window.onload = () => {
   for(i = 0; i < table.rows.length; i++) {
     let salary = parseInt(table.rows[i].cells[3].innerHTML);
     let age = parseInt(table.rows[i].cells[4].innerHTML);
-  
+    
     inSalary = inSalary + salary;
     inAge = inAge + age;
   }
   
   salaryElement.innerHTML = inSalary;
   ageElement.innerHTML = inAge;
-  console.log("Total Salary: " + inSalary + " & " + "Total Age: " + inAge);
+  // console.log("Total Salary: " + inSalary + " & " + "Total Age: " + inAge);
 }

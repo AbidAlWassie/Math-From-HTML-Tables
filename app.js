@@ -22,8 +22,8 @@ window.onload = () => {
     
   }
   
-  salaryElement.innerHTML = inSalary;
-  ageElement.innerHTML = avAge;
+  salaryElement.innerHTML = "Total " + inSalary + "$";
+  ageElement.innerHTML = "Average " + avAge;
   console.log(counter);
   // console.log("Total Salary: " + inSalary + " & " + "Total Age: " + inAge);
 }

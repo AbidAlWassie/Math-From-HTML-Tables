@@ -15,9 +15,11 @@ window.onload = () => {
     
     let salary = parseInt(table.rows[i].cells[3].innerHTML);
     let age = parseInt(table.rows[i].cells[4].innerHTML);
+    
     inSalary = inSalary + salary;
     inAge = inAge + age;
     avAge = inAge / counter;
+    
   }
   
   salaryElement.innerHTML = inSalary;
